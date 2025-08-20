@@ -3,9 +3,9 @@ import './GetInvolved.css'
 
 const GetInvolved = () => {
   return (
-    <div className='body'>
-         <div class="container1">
-        <div class="content-heading1">
+    <div className='getinvolved-body'>
+         <div class="getinvolved-container">
+        <div class="getinvolved-content-heading">
             <h1>Get Involved</h1>
         </div>
         
