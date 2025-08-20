@@ -3,9 +3,12 @@ import './Header.css'
 
 export default function Header(){
   const [menuOpen, setMenuOpen] = useState(false)
+  const [searchOpen, setSearchOpen] = useState(false)
+
   const toggleMenu = () => setMenuOpen(!menuOpen)
   const toggleLanguage = () => {}
   const bookAppointment = () => {}
+  const toggleSearch = () => setSearchOpen(!searchOpen)
 
   return (
     <header className="header">
@@ -36,69 +39,72 @@ export default function Header(){
                     </div>
                 </div>
 
-                <nav className={`nav-menu ${menuOpen ? 'active' : ''}`} id="navMenu">
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">Patient Portal</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">Appointments</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">
-                            Specialties
-                            <span className="dropdown-arrow">▼</span>
-                        </a>
-                        <div className="dropdown-menu">
-                            <a href="#" className="dropdown-item">Cardiology</a>
-                            <a href="#" className="dropdown-item">Neurology</a>
-                            <a href="#" className="dropdown-item">Oncology</a>
-                            <a href="#" className="dropdown-item">Pediatrics</a>
-                            <a href="#" className="dropdown-item">Surgery</a>
-                        </div>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">
-                            Facilities
-                            <span className="dropdown-arrow">▼</span>
-                        </a>
-                        <div className="dropdown-menu">
-                            <a href="#" className="dropdown-item">Emergency Room</a>
-                            <a href="#" className="dropdown-item">ICU</a>
-                            <a href="#" className="dropdown-item">Laboratory</a>
-                            <a href="#" className="dropdown-item">Radiology</a>
-                            <a href="#" className="dropdown-item">Pharmacy</a>
-                        </div>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">Locations</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">International Patients</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#" className="nav-link">AI Tadrib (The Training)</a>
-                    </li>
-                </nav>
+                {searchOpen ? (
+                  <div className="search-bar active">
+                    <input type="text" className="search-input" placeholder="Search for Doctor, Hospital or Treatment" autoFocus />
+                    <button className="search-btn" onClick={toggleSearch}>✖</button>
+                  </div>
+                ) : (
+                  <>
+                    <nav className={`nav-menu ${menuOpen ? 'active' : ''}`} id="navMenu">
+                        <li className="nav-item">
+                            <a href="#" className="nav-link">Patient Portal</a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="#" className="nav-link">Appointments</a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="#" className="nav-link">
+                                Specialties <span className="dropdown-arrow">▼</span>
+                            </a>
+                            <div className="dropdown-menu">
+                                <a href="#" className="dropdown-item">Cardiology</a>
+                                <a href="#" className="dropdown-item">Neurology</a>
+                                <a href="#" className="dropdown-item">Oncology</a>
+                                <a href="#" className="dropdown-item">Pediatrics</a>
+                                <a href="#" className="dropdown-item">Surgery</a>
+                            </div>
+                        </li>
+                        <li className="nav-item">
+                            <a href="#" className="nav-link">
+                                Facilities <span className="dropdown-arrow">▼</span>
+                            </a>
+                            <div className="dropdown-menu">
+                                <a href="#" className="dropdown-item">Emergency Room</a>
+                                <a href="#" className="dropdown-item">ICU</a>
+                                <a href="#" className="dropdown-item">Laboratory</a>
+                                <a href="#" className="dropdown-item">Radiology</a>
+                                <a href="#" className="dropdown-item">Pharmacy</a>
+                            </div>
+                        </li>
+                        <li className="nav-item"><a href="#" className="nav-link">Locations</a></li>
+                        <li className="nav-item"><a href="#" className="nav-link">International Patients</a></li>
+                        <li className="nav-item"><a href="#" className="nav-link">AI Tadrib (The Training)</a></li>
+                    </nav>
 
-                <div className="header-actions">
-                    <button className="language-toggle" onClick={toggleLanguage}>عربي</button>
+                    <div className="header-actions">
+                        <button className="language-toggle" onClick={toggleLanguage}>عربي</button>
 
-                    <button className="accessibility-btn" title="Accessibility Options">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 18a8 8 0 118-8 8 8 0 01-8 8zm1-13h2a1 1 0 000-2h-2a1 1 0 000 2zm-1 6V9a1 1 0 00-2 0v4a1 1 0 002 0zm0 4h-2a1 1 0 000 2h2a1 1 0 000-2z"/>
-                        </svg>
-                    </button>
+                        <button className="accessibility-btn" title="Accessibility Options">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 18a8 8 0 118-8 8 8 0 01-8 8zm1-13h2a1 1 0 000-2h-2a1 1 0 000 2zm-1 6V9a1 1 0 00-2 0v4a1 1 0 002 0zm0 4h-2a1 1 0 000 2h2a1 1 0 000-2z"/>
+                            </svg>
+                        </button>
 
-                    <button className="appointment-btn" onClick={bookAppointment}>
-                        Book Appointment
-                    </button>
+                        <button className="appointment-btn" onClick={bookAppointment}>
+                            Book Appointment
+                        </button>
 
-                    <button className="menu-toggle" onClick={toggleMenu}>☰</button>
-                </div>
+                    <button className="search-btn" onClick={toggleSearch} style={{ border: "none", background: "white" }}> <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M21.71 20.29L18 16.61A9 9 0 1016.61 18l3.68 3.68a1 1 0 001.42 0 1 1 0 000-1.39zM11 18a7 7 0 117-7 7 7 0 01-7 7z"/>
+                    </svg></button>
+
+                        <button className="menu-toggle" onClick={toggleMenu}>☰</button>
+                    </div>
+                  </>
+                )}
             </div>
         </div>
     </header>
   )
 }
-
-
