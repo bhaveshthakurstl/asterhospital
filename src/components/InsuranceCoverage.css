@@ -208,34 +208,34 @@
             50% { transform: translateY(-10px) rotate(180deg); }
         } */
 
-        /* @media (max-width: 768px) {
-            .content-wrapper {
+        @media (max-width: 768px) {
+            .insurance-content-wrapper {
                 flex-direction: column;
                 gap: 40px;
             }
             
-            .table-header, .table-row {
+            /* .insurance-table-header, .insurance-table-row {
                 grid-template-columns: 1fr;
                 gap: 10px;
                 text-align: center;
             }
             
-            .table-header {
+            .insurance-table-header {
                 display: none;
             }
             
-            .table-row {
+            .insurance-table-row {
                 padding: 15px;
                 border-radius: 10px;
                 margin-bottom: 10px;
                 background: rgba(255, 255, 255, 0.15);
-            }
+            } */
             
-            h1 {
+            /* h1 {
                 font-size: 2rem;
-            }
+            } */
             
-            .container {
+            .insurance-container {
                 padding: 40px 15px;
             }
-        } */
+        }
