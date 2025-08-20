@@ -7,7 +7,7 @@ const HealthLibrary = () => {
     <div class="health-container">
     <div class="health-content-heading">
         <h1>Health Library</h1>
-        <p>Your comprehensive guide to wellness and healthy living</p>
+        {/* <p>Your comprehensive guide to wellness and healthy living</p> */}
     </div>
 
 
@@ -28,7 +28,7 @@ const HealthLibrary = () => {
             <div class="health-card-content">
                 <h3 class="health-card-title">Eat Right to Beat Tuberculosis</h3>
                 <p class="health-card-description">Getting the right nutrition can help speed treatment and prevention includes healthy immunity. Discover foods that boost your immune system and support recovery.</p>
-                <a href="#" class="read-more">Read More</a>
+                <a href="#" class="health-read-more">Read More</a>
             </div>
         </div>
 
@@ -48,8 +48,8 @@ const HealthLibrary = () => {
                 <span class="health-category-tag pregnancy-care">Mental Wellness</span>
             </div>
             <div class="health-card-content">
-                <h3 class="card-title">Can Yoga Cure Acid Reflux?</h3>
-                <p class="card-description">Acid reflux, also known as Gastroesophageal reflux disease (GERD), This backwash irritates...</p>
+                <h3 class="health-card-title">Can Yoga Cure Acid Reflux?</h3>
+                <p class="health-card-description">Acid reflux, also known as Gastroesophageal reflux disease (GERD), This backwash irritates...</p>
                 <a href="#" class="health-read-more">Read More</a>
             </div>
         </div>
