@@ -1,0 +1,86 @@
+.quicksearch-body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #0f172a 100%);
+    min-height: 30vh;
+    overflow-x: hidden;
+}
+
+.quick-container {
+            width: 100%;
+            max-width: 1200px;
+                padding: 20px;
+        }
+
+        .quick-title {
+            color: white;
+            font-size: 1.5rem;
+            /* font-weight: 300; */
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+
+        .quick-search-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .quick-dropdown {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            color: #374151;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-width: 200px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .quick-dropdown.placeholder {
+            color: #9ca3af;
+        }
+
+        .chevron {
+            margin-left: 1rem;
+            width: 20px;
+            height: 20px;
+            color: #9ca3af;
+        }
+
+        .book-btn {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            font-weight: 500;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            min-width: 200px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .book-btn:hover {
+            background: white;
+            color: #1e40af;
+        }
+
+        @media (max-width: 768px) {
+            .search-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .dropdown, .book-btn {
+                min-width: 100%;
+            }
+            
+            h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+        }

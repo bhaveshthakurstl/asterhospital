@@ -15,6 +15,7 @@ import './App.css'
 // import help from '../../../my-app/src/assets/free-help.png'
 // import help from './assets/free-help.png'
 import HelpSideDrawer from './components/HelpSideDrawer.jsx'
+import QuickSearch from './components/QuickSearch.jsx'
 
 
 function App(){
@@ -24,11 +25,15 @@ function App(){
     {/* Hedaer  */}
     <Header />
 
+    {/* Helpsidebar  */}
    <HelpSideDrawer />
 
 
     {/* craousel  */}
     <Hero />
+
+     {/* QuickSearch  */}
+   <QuickSearch />
     
 
     {/* How can we help you today? */}
