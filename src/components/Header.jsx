@@ -31,7 +31,7 @@ export default function Header(){
             <div className="header-content">
                 <div className="logo-section">
                     <div className="logo">
-                        <div className="logo-icon">A+</div>
+                        {/* <div className="logo-icon">A+</div> */}
                         <div className="logo-text">
                             <div className="logo-main">Aster</div>
                             <div className="logo-subtitle">HOSPITAL We'll Treat You Well</div>
@@ -51,7 +51,7 @@ export default function Header(){
                             <a href="#" className="nav-link">Patient Portal</a>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link">Appointments</a>
+                            <a href="#" className="nav-link">Doctors</a>
                         </li>
                         <li className="nav-item">
                             <a href="#" className="nav-link">
@@ -85,11 +85,11 @@ export default function Header(){
                     <div className="header-actions">
                         <button className="language-toggle" onClick={toggleLanguage}>عربي</button>
 
-                        <button className="accessibility-btn" title="Accessibility Options">
+                        {/* <button className="accessibility-btn" title="Accessibility Options">
                             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 18a8 8 0 118-8 8 8 0 01-8 8zm1-13h2a1 1 0 000-2h-2a1 1 0 000 2zm-1 6V9a1 1 0 00-2 0v4a1 1 0 002 0zm0 4h-2a1 1 0 000 2h2a1 1 0 000-2z"/>
                             </svg>
-                        </button>
+                        </button> */}
 
                         <button className="appointment-btn" onClick={bookAppointment}>
                             Book Appointment
