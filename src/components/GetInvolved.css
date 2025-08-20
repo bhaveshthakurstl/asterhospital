@@ -269,20 +269,18 @@ max-width: 1200px;
 }
 
 @media (max-width: 768px) {
-    .campaigns-grid {
+    .campaigns-grid1 {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 20px; /* reduce spacing */
     }
-    
-    .campaign-card {
-        height: 250px;
+
+    .campaign-card1 {
+        height: 200px; /* smaller height on mobile */
+        width: 100%;
+        padding: 5px
     }
-    
-    .header h1 {
-        font-size: 2rem;
-    }
-    
-    .campaign-title {
-        font-size: 1.4rem;
+
+    .campaign-title1 {
+        font-size: 1.2rem; /* smaller text */
     }
 }
