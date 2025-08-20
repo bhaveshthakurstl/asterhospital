@@ -48,7 +48,12 @@ const AsterGlobalNetwork = () => {
                 <div class="floating-stats floating-3">Global Presence</div>
             </div>
         </div> */}
-        <img src={globalImage} alt='global' style={{height: '400px', width: '1400px'}}/>
+        {/* <img src={globalImage} alt='global' style={{height: '400px', width: '1400px'}}/> */}
+        <img 
+  src={globalImage} 
+  alt="global" 
+  className="global-image" 
+/>
 
         {/* <div class="update-info">*Last Updated on August 14 2023</div>
 

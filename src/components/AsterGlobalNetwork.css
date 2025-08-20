@@ -37,6 +37,13 @@
     line-height: 1.6;
 }
 
+.global-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px; /* optional for nicer look */
+  display: block;
+}
+
 .global-body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #0f172a 100%);
@@ -477,3 +484,4 @@
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(16, 185, 129, 0.7);
 }
+
