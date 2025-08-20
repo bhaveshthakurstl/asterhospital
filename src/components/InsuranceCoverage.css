@@ -31,8 +31,9 @@
     font-weight: 300;
     letter-spacing: 1.6px;
     /* text-transform: uppercase; */
-    margin-bottom: 5px;
-    margin-top: -33px;
+    /* margin-bottom: 5px; */
+    margin-top: -45px;
+    margin-bottom: 15px
 }
 
         .insurance-provider-selector {
@@ -213,6 +214,10 @@
                 flex-direction: column;
                 gap: 40px;
             }
+
+             .containing-header h1 {
+                margin-top: -33px;
+             }
             
             /* .insurance-table-header, .insurance-table-row {
                 grid-template-columns: 1fr;

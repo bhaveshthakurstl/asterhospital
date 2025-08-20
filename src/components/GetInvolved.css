@@ -260,6 +260,7 @@ max-width: 1200px;
     letter-spacing: 1px;
     margin: 0 auto;
     display: block;
+    margin-bottom: 10px
 }
 
 .view-all-btn1:hover {
