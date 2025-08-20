@@ -37,6 +37,38 @@
     line-height: 1.6;
 }
 
+.global-body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #0f172a 100%);
+    min-height: 40vh;
+    /* overflow-x: hidden; */
+}
+
+.global-container {
+    position: relative;
+    padding: 20px 20px;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.global-content-heading {
+    text-align: center;
+    /* margin-bottom: 60px; */
+    opacity: 0;
+    animation: fadeInDown 1s ease-out forwards;
+}
+
+.global-content-heading h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    /* margin-bottom: -15px; */
+    margin-bottom: -46px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
 .main-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
