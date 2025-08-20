@@ -77,7 +77,69 @@ export default function Header(){
                                 <a href="#" className="dropdown-item">Pharmacy</a>
                             </div>
                         </li>
-                        <li className="nav-item"><a href="#" className="nav-link">Locations</a></li>
+                        {/* <li className="nav-item"><a href="#" className="nav-link">Locations</a></li> */}
+                        <li className="nav-item">
+                            <a href="#" className="nav-link">
+                                Locations <span className="dropdown-arrow">▼</span>
+                            </a>
+                            <div className="dropdown-menu locations-dropdown">
+                                <div className="location-item">
+                                    <div className="location-main">Aster Hospital, Mankhool</div>
+                                    <div className="location-hover-details">
+                                        <div className="location-stats">
+                                            <span>35 beds</span>
+                                            <span>16 doctors</span>
+                                            <span>22 specialisations</span>
+                                        </div>
+                                        <button className="more-details-btn">More details</button>
+                                    </div>
+                                </div>
+                                <div className="location-item">
+                                    <div className="location-main">Aster Hospital - Al Qusais</div>
+                                    <div className="location-hover-details">
+                                        <div className="location-stats">
+                                            <span>35 beds</span>
+                                            <span>16 doctors</span>
+                                            <span>22 specialisations</span>
+                                        </div>
+                                        <button className="more-details-btn">More details</button>
+                                    </div>
+                                </div>
+                                <div className="location-item">
+                                    <div className="location-main">Aster Cedars Hospital & Clinic, Jebel Ali</div>
+                                    <div className="location-hover-details">
+                                        <div className="location-stats">
+                                            <span>35 beds</span>
+                                            <span>16 doctors</span>
+                                            <span>22 specialisations</span>
+                                        </div>
+                                        <button className="more-details-btn">More details</button>
+                                    </div>
+                                </div>
+                                <div className="location-item">
+                                    <div className="location-main">Aster Hospital, Muhaisnah</div>
+                                    <div className="location-hover-details">
+                                        <div className="location-stats">
+                                            <span>35 beds</span>
+                                            <span>16 doctors</span>
+                                            <span>22 specialisations</span>
+                                        </div>
+                                        <button className="more-details-btn">More details</button>
+                                    </div>
+                                </div>
+                                <div className="location-item">
+                                    <div className="location-main">Aster Day Surgery Center</div>
+                                    <div className="location-hover-details">
+                                        <div className="location-stats">
+                                            <span>35 beds</span>
+                                            <span>16 doctors</span>
+                                            <span>22 specialisations</span>
+                                        </div>
+                                        <button className="more-details-btn">More details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         <li className="nav-item"><a href="#" className="nav-link">International Patients</a></li>
                         <li className="nav-item"><a href="#" className="nav-link">AI Tadrib (The Training)</a></li>
                     </nav>
