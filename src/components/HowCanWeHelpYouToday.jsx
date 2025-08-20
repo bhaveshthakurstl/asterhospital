@@ -83,10 +83,10 @@ const HowCanWeHelpYouToday = () => {
   return (
   <div className='body'>
   
-  <div class="container">
+  <div class="help-container">
       <div class="content-heading">
-          <h1 class="title">How can we help you today?</h1>
-          <p class="subtitle">Your health, our priority - accessible care at your fingertips</p>
+          <div class="help-title">How can we help you today?</div>
+          {/* <p class="subtitle">Your health, our priority - accessible care at your fingertips</p> */}
       </div>
       
       <div class="services-grid">
@@ -95,7 +95,7 @@ const HowCanWeHelpYouToday = () => {
                   <div class="icon">📅</div>
               </div>
               <h3 class="service-title">Book an Appointment</h3>
-              <p class="service-description">Schedule your visit with our expert healthcare professionals at your convenience</p>
+              {/* <p class="service-description">Schedule your visit with our expert healthcare professionals at your convenience</p> */}
           </div>
           
           <div class="service-card" data-service="doctor">
@@ -103,7 +103,7 @@ const HowCanWeHelpYouToday = () => {
                   <div class="icon">🩺</div>
               </div>
               <h3 class="service-title">Find a Doctor</h3>
-              <p class="service-description">Connect with qualified specialists and physicians in your area or online</p>
+              {/* <p class="service-description">Connect with qualified specialists and physicians in your area or online</p> */}
           </div>
           
           <div class="service-card" data-service="insurance">
@@ -111,7 +111,7 @@ const HowCanWeHelpYouToday = () => {
                   <div class="icon">🛡️</div>
               </div>
               <h3 class="service-title">Insurance Coverage</h3>
-              <p class="service-description">Check your insurance benefits and understand your healthcare coverage options</p>
+              {/* <p class="service-description">Check your insurance benefits and understand your healthcare coverage options</p> */}
           </div>
           
           <div class="service-card" data-service="locations">
@@ -119,7 +119,7 @@ const HowCanWeHelpYouToday = () => {
                   <div class="icon">📍</div>
               </div>
               <h3 class="service-title">Find Locations</h3>
-              <p class="service-description">Locate nearby healthcare facilities, clinics, and emergency services</p>
+              {/* <p class="service-description">Locate nearby healthcare facilities, clinics, and emergency services</p> */}
           </div>
       </div>
   </div>

@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import "./Hero.css";
 import video1 from "../assets/video1.mp4";
 import video2 from "../assets/video2.mp4";
+import video3 from "../assets/video3.mp4";
 
-const videos = [video2, video1]; 
+const videos = [video2, video3, video1]; 
 
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);

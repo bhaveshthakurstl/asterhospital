@@ -1,7 +1,7 @@
 .body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #0f172a 100%); */
-    /* min-height: 100vh; */
+    min-height: 40vh;
     overflow-x: hidden;
 }
 

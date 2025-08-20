@@ -5,39 +5,33 @@
     overflow-x: hidden;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+.comitted-container {
+  width: 100%;
+  animation: fadeIn 1s ease-out;
+}
+
+.comitted-title{
+  margin-bottom: -38px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.comitted-description{
+  margin-bottom: -38px;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 .content-heading {
     text-align: center;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     opacity: 0;
     animation: fadeInDown 1s ease-out forwards;
 }
 
-.content-heading h1 {
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 20px;
-    font-weight: 300;
-    letter-spacing: 2px;
-}
-
-.content-heading p {
-    font-size: 1.1rem;
-    color: #fff;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-.content-wrapper {
+.comitted-content-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 30px;
     align-items: center;
 }
 
@@ -88,14 +82,15 @@
 }
 
 .feature-icon {
-    width: 80px;
-    height: 80px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    margin-bottom: 20px;
-    display: flex;
+    margin-bottom: 10px;
+    display: flex
+;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 0.8rem;
     transition: transform 0.3s ease;
 }
 
@@ -119,35 +114,41 @@
     background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
 }
 
-.feature-title {
-    font-size: 1.3rem;
+.comitted-feature-title {
+    /* font-size: 1.3rem;
     color: #2c5aa0;
     margin-bottom: 15px;
-    font-weight: 600;
+    font-weight: 600; */
+    font-weight: 0.8rem;
+    font-size: 16px;
+    line-height: 0.8rem;
+    margin: 0 0 4px;
+    color: #2c5aa0;
 }
 
-.feature-description {
+.comitted-feature-description {
     color: #666;
-    line-height: 1.6;
-    font-size: 0.95rem;
+    line-height: 1.1rem;
+    font-size: 12px;
 }
 
-.doctor-image {
+.comitted-doctor-image {
     position: relative;
     opacity: 0;
     animation: slideInRight 1s ease-out 0.5s forwards;
 }
 
-.doctor-image img {
+.comitted-doctor-image img {
+        margin-left: 80px;
     width: 100%;
-    max-width: 500px;
+    max-width: 395px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
-.doctor-image:hover img {
+.comitted-doctor-image:hover img {
     transform: scale(1.05);
 }
 

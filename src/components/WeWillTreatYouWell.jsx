@@ -4,13 +4,13 @@ import trustImage from '../assets/trust.jpg'
 
 const WeWillTreatYouWell = () => {
   return (
-    <div className='body'>
-        <div class="container">
+    <div className='treat-body'>
+        <div class="treat-container">
         <div class="content-wrapper">
             <div class="left-content">
-                <h1 class="title">We'll treat you well</h1>
+                <h1 class="treat-title">We'll treat you well</h1>
                 
-                <p class="description">
+                <p class="treat-description">
                     That's our simple promise, and one that makes life easy for our patients and their families, even when ailments and treatments may be complex. Today, we are among the list of world-class hospitals in the UAE because all our specialists and support staff work in a coordinated and compassionate manner, delivering the best and latest care for all medical conditions.
                 </p>
 
