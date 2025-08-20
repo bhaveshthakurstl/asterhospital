@@ -391,3 +391,10 @@
 .tooltip:hover::after {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+
+.element-2 {
+    bottom: 91px;
+}
+}
