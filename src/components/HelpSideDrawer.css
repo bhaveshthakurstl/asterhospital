@@ -1,0 +1,216 @@
+/* HelpSideDrawer.css */
+
+.fixed-btn {
+  position: fixed;
+  top: 32%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: #fff;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+.fixed-btn:hover {
+  background: #0056b3;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.help {
+  height: 35px;
+  width: 35px;
+}
+
+/* Overlay */
+.drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Side Drawer */
+.side-drawer {
+  position: fixed;
+  top: 0;
+  right: -400px; /* Start off-screen */
+  width: 380px;
+  height: 100vh;
+  background: #1e3a5f;
+  color: white;
+  z-index: 1000;
+  transition: right 0.3s ease-in-out;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+}
+
+.side-drawer.open {
+  right: 0; /* Slide in */
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Drawer Content */
+.drawer-content {
+  padding: 60px 20px 20px;
+  height: 100%;
+}
+
+.drawer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  height: 100%;
+}
+
+/* Drawer Items */
+.drawer-item {
+  background: #2c5282;
+  border-radius: 12px;
+  padding: 20px 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  border: 2px solid transparent;
+}
+
+.drawer-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  border-color: rgba(255,255,255,0.3);
+}
+
+.drawer-item.whatsapp {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.drawer-item.appointment {
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+}
+
+.drawer-item.health-packages {
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+.drawer-item.international {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.drawer-item.health-tap {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.drawer-item.ask-doctor {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* Item Icons */
+.item-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-icon svg {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+/* Item Text */
+.drawer-item span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .side-drawer {
+    width: 100%;
+    right: -100%;
+  }
+  
+  .drawer-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .drawer-item {
+    min-height: 80px;
+    padding: 15px 10px;
+  }
+  
+  .drawer-item span {
+    font-size: 13px;
+  }
+  
+  .item-icon {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 8px;
+  }
+  
+  .item-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drawer-content {
+    padding: 60px 15px 20px;
+  }
+  
+  .drawer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .drawer-item {
+    min-height: 70px;
+    padding: 12px 8px;
+  }
+}

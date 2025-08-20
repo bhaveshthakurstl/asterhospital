@@ -11,6 +11,11 @@ import AsterGlobalNetwork from './components/AsterGlobalNetwork.jsx'
 import HealthLibrary from './components/HealthLibrary.jsx'
 import GetInvolved from './components/GetInvolved.jsx'
 import InsuranceCoverage from './components/InsuranceCoverage.jsx'
+import './App.css'
+// import help from '../../../my-app/src/assets/free-help.png'
+// import help from './assets/free-help.png'
+import HelpSideDrawer from './components/HelpSideDrawer.jsx'
+
 
 function App(){
   return (
@@ -18,6 +23,9 @@ function App(){
 
     {/* Hedaer  */}
     <Header />
+
+   <HelpSideDrawer />
+
 
     {/* craousel  */}
     <Hero />
