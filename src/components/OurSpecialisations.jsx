@@ -6,12 +6,12 @@ import cardiacImage from '../assets/cardiac.jpg'
 
 const OurSpecialisations = () => {
   return (
-    <div className='body'>
+    <div className='specialization-body'>
 
-    <div class="container">
+    <div class="specialization-container">
         <div class="content-heading">
-            <h1>Our Specialisations</h1>
-            <p>Aster offers unparalleled clinical care, backed by advanced research and expertise in all medical disciplines.</p>
+            <div class='specialization-title'>Our Specialisations</div>
+            {/* <div className='specialization-description'>Aster offers unparalleled clinical care, backed by advanced research and expertise in all medical disciplines.</div> */}
         </div>
 
         <div class="carousel-container">

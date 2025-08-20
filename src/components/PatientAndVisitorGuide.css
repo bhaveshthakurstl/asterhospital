@@ -12,22 +12,22 @@
     padding: 15px;
 }
 
-.content-heading1 {
+.content-heading-patient {
     text-align: center;
     margin-bottom: 60px;
     opacity: 0;
     animation: fadeInDown 1s ease-out forwards;
   }
   
-  .content-heading1 h1 {
-    font-size: 3rem;
+  .content-heading-patient h1 {
+    font-size: 1.5rem;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: -15px;
     font-weight: 300;
     letter-spacing: 2px;
   }
   
-  .content-heading1 p {
+  .content-heading-patient p {
     font-size: 1.1rem;
     color: #fff;
     max-width: 800px;
@@ -140,7 +140,8 @@
         0 10px 25px rgba(0,0,0,0.15),
         0 0 0 1px rgba(255,255,255,0.2) inset;
     position: relative;
-    min-height: 200px;
+    /* min-height: 200px; */
+        height: 330px;
 }
 
 .hospital-image1 img {

@@ -23,9 +23,9 @@ const PatientAndVisitorGuide = () => {
     </div> */}
 
     <div class="container1">
-        <div class="content-heading1">
+        <div class="content-heading-patient">
             <h1>Patient and Visitor Guide</h1>
-            <p>Everything you need to know about getting care at Aster</p>
+            {/* <p>Everything you need to know about getting care at Aster</p> */}
         </div>
 
         <div class="grid1">
