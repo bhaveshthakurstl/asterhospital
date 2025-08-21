@@ -452,13 +452,17 @@
 /* Mobile responsiveness for locations dropdown */
 @media (max-width: 768px) {
   .locations-dropdown {
-    height: 220px;
+    /* height: 220px; */
     overflow-x: auto;
     /* position: static; */
     /* box-shadow: none; */
     /* border: none; */
     /* padding: 0; */
     /* min-width: auto; */
+  }
+
+  .dropdown-menu {
+    margin-left: -70px;
   }
 
   /* .location-hover-details {
